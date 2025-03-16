@@ -6,7 +6,7 @@ body {
     height: 100vh;
     background: linear-gradient(45deg, #ff5733, #33ff57, #3357ff);
     background-size: 200% 200%;
-    animation: gradientAnimation 6s infinite alternate;
+    animation: gradientAnimation 6s infinite alternate, zoomAnimation 4s infinite alternate ease-in-out;
     margin: 0;
 }
 
@@ -19,6 +19,15 @@ body {
     }
     100% {
         background: linear-gradient(45deg, #ff335e, #33ff7a, #333eff);
+    }
+}
+
+@keyframes zoomAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
     }
 }
 
