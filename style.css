@@ -4,17 +4,24 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #47ff00, #00ffee, #0011ff, #7700ff, #ff00aa);
-    background-size: 400% 400%;
-    animation: changeBackground 10s infinite;
+    background: linear-gradient(45deg, #ff5733, #33ff57, #3357ff);
+    background-size: 200% 200%;
+    animation: gradientAnimation 6s infinite alternate;
     margin: 0;
 }
 
-@keyframes changeBackground {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(45deg, #ff5733, #33ff57, #3357ff);
+    }
+    50% {
+        background: linear-gradient(45deg, #ffbd33, #33ffd7, #8d33ff);
+    }
+    100% {
+        background: linear-gradient(45deg, #ff335e, #33ff7a, #333eff);
+    }
 }
+
 
 .card {
     width: 300px;
